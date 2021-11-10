@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Themes\en-US.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfLibrary\WpfLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\en-US.gif" />
+  </ItemGroup>
+
+</Project>

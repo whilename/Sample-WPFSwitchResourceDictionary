@@ -1,0 +1,18 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:s="clr-namespace:System;assembly=mscorlib">
+    <!-- String resource dictionary -->
+    <s:String x:Key="Greeting">Hello WPF!</s:String>
+    <s:String x:Key="Language">Switch Language</s:String>
+
+    <!-- Style and Media Resource Dictionary -->
+    <SolidColorBrush x:Key="MyLibSCB" Color="Blue"></SolidColorBrush><!-- Background color -->
+    <ImageBrush x:Key="MyLibImgB" ImageSource="pack://application:,,,/WpfApp;component/Themes/en-Us.gif"></ImageBrush><!-- Background image -->
+    <!-- image source -->
+    <BitmapImage x:Key="MyLibImg" UriSource="pack://application:,,,/WpfApp;component/Themes/en-Us.gif" /><!-- Absolute Uri -->
+    <BitmapImage x:Key="MyLibBitmap" UriSource="/WpfApp;component/Themes/en-Us.gif"></BitmapImage><!-- Relative Uri -->
+    <!-- Style setting -->
+    <Style TargetType="Image" x:Key="MyLibStyle">
+        <Setter Property="Source" Value="pack://application:,,,/WpfApp;component/Themes/en-Us.gif" />
+    </Style>
+</ResourceDictionary>

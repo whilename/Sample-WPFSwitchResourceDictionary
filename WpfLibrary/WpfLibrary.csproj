@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Themes\zh-CN.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Themes\zh-CN.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="Themes\Theme.xaml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Page>
+  </ItemGroup>
+
+</Project>
